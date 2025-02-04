@@ -286,13 +286,13 @@ export default function AdminDashboard() {
 
   const handleDelete = async (orderId: string) => {
     const result = await Swal.fire({
-      title: "Are you sure?",
-      text: "You won't be able to revert this!",
+      title: "Do you confirm?",
+      text: "This can't be undone!",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#d33",
       cancelButtonColor: "#3085d6",
-      confirmButtonText: "Yes, delete it!",
+      confirmButtonText: "delete",
     });
 
     if (!result.isConfirmed) return;
